@@ -79,7 +79,39 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 // Đóng kết nối
 $conn->close();
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xem ảnh:</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .submit-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <form action="xemanh.php" method="post" enctype="multipart/form-data">
+        <input type="submit" class="submit-btn" value="Xem ảnh" name="submit">
+    </form>
+</body>
+</html>
 
-<form action="xemanh.php" method="post" enctype="multipart/form-data">
-     <input type="submit" value="Xem ảnh" name="submit">
- </form>

@@ -1,5 +1,4 @@
 <?php
-    include_once 'guiThongTin.php';
 ?>
 
 <!DOCTYPE html>
@@ -41,6 +40,16 @@
             border: 1px solid #ccc;
             border-radius: 4px;
         }
+        /*
+        .form-group input[type="number"] {
+            -moz-appearance: textfield;
+        }
+        .form-group input[type="number"]::-webkit-outer-spin-button,
+        .form-group input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }*/
+
         .submit-btn {
             width: 100%;
             padding: 10px;
