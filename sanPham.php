@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload Hình Ảnh & Lưu Thông Tin Sản Phẩm</title>
+    <title>Lưu Thông Tin Sản Phẩm</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -40,16 +40,6 @@
             border: 1px solid #ccc;
             border-radius: 4px;
         }
-        /*
-        .form-group input[type="number"] {
-            -moz-appearance: textfield;
-        }
-        .form-group input[type="number"]::-webkit-outer-spin-button,
-        .form-group input[type="number"]::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }*/
-
         .submit-btn {
             width: 100%;
             padding: 10px;
@@ -69,8 +59,8 @@
 <body>
 
 <div class="product-form">
-    <h2>Upload Hình Ảnh & Lưu Thông Tin Sản Phẩm</h2>
-    <form action="guiThongTin1.php" method="post" enctype="multipart/form-data">
+    <h2>Lưu Thông Tin Sản Phẩm</h2>
+    <form action="xuly.php" method="post" enctype="multipart/form-data">
         <div class="form-group">
             <label for="product-id">ID Sản Phẩm:</label>
             <input type="text" id="product-id" name="product-id" required>
@@ -89,7 +79,7 @@
             <p>Ghi chú:</p>
             <input type="text" name="test" id="ghichu">
         </div>
-        <button type="submit" class="submit-btn" name="submit">Lưu & Upload</button>
+        <button type="submit" class="submit-btn" name="submit">Lưu</button>
     </form>
 </div>
 

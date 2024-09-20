@@ -8,9 +8,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $product_price = $_POST['product-price'];
     $note = $_POST['test'];
 
-    // Khởi tạo biến image_url mặc định là rỗng
-    $image_url = '';
-
     // Xử lý file hình ảnh
     if (isset($_POST["submit"])) {
         // Kiểm tra xem người dùng đã chọn file hay chưa
