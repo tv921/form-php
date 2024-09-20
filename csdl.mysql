@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS picture (
+    id_picture INT AUTO_INCREMENT PRIMARY KEY,  -- Khóa chính, tự động tăng
+    duong_dan VARCHAR(255) NOT NULL,                   -- Đường dẫn của hình ảnh
+    note TEXT                                    -- Ghi chú về hình ảnh
+);
+
+CREATE TABLE IF NOT EXISTS product (
+    id_product INT AUTO_INCREMENT PRIMARY KEY,   -- Khóa chính, tự động tăng
+    product_name VARCHAR(255) NOT NULL,          -- Tên sản phẩm
+    price DECIMAL(10, 2) NOT NULL                -- Giá sản phẩm 
+);
